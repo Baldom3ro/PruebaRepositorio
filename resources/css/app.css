@@ -1,0 +1,189 @@
+@import 'bootstrap';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* General Styles */
+body {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombras suaves en los títulos */
+    color: #1d911f; /* Verde bosque */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+p {
+    color: #5a5a5a;
+}
+
+/* Navbar Styles */
+.navbar-green {
+    background: #1d911f; /* Verde oscuro */
+    color: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem 1.5rem; /* Aumenta el espacio vertical */
+    font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
+}
+
+.navbar-green .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    margin-right: 1rem; /* Espaciado entre enlaces */
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navbar-green .navbar-nav .nav-link:hover {
+    color: #A9DFBF; /* Verde claro */
+    transform: scale(1.1); /* Ligero zoom al hacer hover */
+}
+
+.navbar-green .navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-green .navbar-brand {
+    font-size: 1.5rem; /* Agranda el texto de la marca */
+    font-weight: bold;
+}
+
+.navbar-green .navbar-toggler {
+    padding: 0.5rem; /* Agranda el botón de menú */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-green {
+        font-size: 1rem; /* Ajusta el tamaño en pantallas pequeñas */
+        padding: 0.8rem 1rem;
+    }
+
+    .navbar-green .navbar-brand {
+        font-size: 1.2rem; /* Ajusta el tamaño de la marca */
+    }
+}
+
+
+/* Table Styles */
+.table {
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden;
+    border-collapse: separate;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #d4edda; /* Verde claro */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table-dark th {
+    background-color: #1d911f;
+    color: white;
+    text-align: center;
+}
+
+.table-dark th, .table td {
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Alternar colores */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+/* Button Styles */
+.btn-green {
+    background-color: #1d911f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-green:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Animations (Using Animate.css Classes) */
+.animate__animated {
+    animation-duration: 1s;
+}
+
+/* Cards for Additional Information */
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #1d911f;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1d911f;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #A9DFBF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-green {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
